@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+  <h1>Publications#index</h1>
+  <% @publications.each do |publication| %>
+    <div class="card-publication">
+      <%= image_tag "#{publication.picture}", class: "img" %>
+      <div class="elements">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <%= publication.number_of_like %>
+      <%= publication.content %>
+    </div>
+  <% end %>
+<% else %>
+  <% redirect_to "sessions/new" %>
+<% end %>
