@@ -5,9 +5,15 @@
 
 .navbar {
   flex-grow: 0;
-  letter-spacing: 10px;
+  letter-spacing: 20px;
+  font-size: 25px;
+
+
+  .fa-regular {
+    color: white;
+  }
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 80px;
+  width: 150px;
 }
