@@ -7,12 +7,14 @@
     <div class="form-inputs">
       <%= f.input :email,
                   label: false,
+                  placeholder: "Num. téléphone, nom d'utilisateur ou e-mail",
                   class: "input-login",
                   required: false,
                   autofocus: true,
                   input_html: { autocomplete: "email" } %>
       <%= f.input :password,
                   label: false,
+                  placeholder: "Mot de passe",
                   class: "input-login",
                   required: false,
                   input_html: { autocomplete: "current-password" } %>
