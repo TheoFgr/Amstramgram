@@ -1,1 +1,5 @@
-<h2>Coucou</h2>
+
+<%= simple_form_for(@publication) do |f| %>
+  <%= f.input :photo, as: :file, label: false %>
+  <%= f.submit "Post" %>
+<% end %>
