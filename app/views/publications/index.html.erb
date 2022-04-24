@@ -5,7 +5,7 @@
       <% if publication.photo.attached? %>
           <%= cl_image_tag publication.photo.key, crop: :fill, class: "img" %>
         <% else %>
-          <img class="img-item" src="https://avatars.githubusercontent.com/u/55115774?v=4" alt="photo">
+          <img class="img" src="https://avatars.githubusercontent.com/u/55115774?v=4" alt="photo">
       <% end %>
       <div class="elements">
         <i class="fa-regular fa-heart"></i>

@@ -21,6 +21,6 @@ class PublicationsController < ApplicationController
   private
 
   def publication_params
-    params.require(:publication).permit(:picture, :content, :number_of_like, photo: [])
+    params.require(:publication).permit(:picture, :content, :number_of_like, :photo)
   end
 end
