@@ -2,11 +2,7 @@
 <% if user_signed_in? %>
   <% @publications.each do |publication| %>
     <div class="card-publication">
-      <% if publication.photo.attached? %>
-          <%= cl_image_tag publication.photo.key, crop: :fill, class: "img" %>
-        <% else %>
-          <img class="img" src="https://avatars.githubusercontent.com/u/55115774?v=4" alt="photo">
-      <% end %>
+      <%= cl_image_tag publication.photo.key, crop: :fill, class: "img" %>
       <div class="elements">
         <i class="fa-regular fa-heart"></i>
         <i class="fa-regular fa-comment"></i>
