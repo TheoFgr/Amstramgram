@@ -3,11 +3,10 @@ class PublicationsController < ApplicationController
     @publications = Publication.all
   end
 
-
-
   def new
     @publication = Publication.new
   end
+  
 
   def create
     @publication = Publication.new(publication_params)
