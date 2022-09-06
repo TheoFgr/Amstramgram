@@ -1,0 +1,13 @@
+.users-container{
+  width: 90%;
+  list-style: none;
+  border-bottom: 1px solid white;
+  padding: 0;
+  margin: 0 auto;
+
+
+  li {
+    font-size: 5vh;
+    border-top: 1px solid white;
+  }
+}

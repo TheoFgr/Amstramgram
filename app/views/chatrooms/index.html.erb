@@ -1,0 +1,13 @@
+<%= render "shared/navbar" %>
+<ul class="users-container">
+  <% @chatrooms.each do |chatroom| %>
+    <li>
+      <%= link_to chatroom_path(chatroom) do %>
+        <% if chatroom.name == current_user.nickname %>
+        <% else %>
+          <%= chatroom.name %>
+        <% end %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
